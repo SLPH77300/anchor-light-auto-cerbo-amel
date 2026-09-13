@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="720" viewBox="0 0 1500 720" font-family="Arial, Helvetica, sans-serif">
+<style>
+ .t{font-size:14px;fill:#111}.tb{font-size:14px;font-weight:bold;fill:#111}.ts{font-size:12px;fill:#444}
+ .title{font-size:20px;font-weight:bold;fill:#1F3864}.blue{fill:#0f6e9c}.tbb{font-size:14px;font-weight:bold;fill:#0f6e9c}
+ .box{fill:#fff;stroke:#333;stroke-width:1.8}.new{fill:#eaf4fa;stroke:#0f6e9c;stroke-width:2.2}
+ .w{stroke:#333;stroke-width:2.4;fill:none}.wb{stroke:#0f6e9c;stroke-width:3;fill:none}
+ .bus{stroke:#c0392b;stroke-width:6}.busn{stroke:#333;stroke-width:6}.led{fill:#fff8c4;stroke:#c8a000;stroke-width:2}
+ .dot{fill:#333}.dotb{fill:#0f6e9c}.cer{fill:#f7f7f7;stroke:#555;stroke-width:1.5;stroke-dasharray:6 4}
+ .arr{stroke:#333;stroke-width:2.2;fill:none;marker-end:url(#a)}
+</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect x="0" y="0" width="1500" height="720" fill="#fff"/>
+<text x="750.0" y="34" class="title" text-anchor="middle">Feu de mouillage — Relais 1 du Cerbo GX câblé EN PARALLÈLE du switch existant</text>
+<line x1="80" y1="110" x2="1420" y2="110" class="bus"/>
+<text x="90" y="98" class="tb" text-anchor="start">Bus +24 V (alimentation du tableau)</text>
+<line x1="80" y1="660" x2="1420" y2="660" class="busn"/>
+<text x="90" y="685" class="tb" text-anchor="start">Bus négatif</text>
+<text x="430" y="150" class="ts" text-anchor="start">Le SWITCH ou le RELAIS met du +24 V sur le fil 0702 → le feu est allumé.</text>
+<text x="430" y="165" class="ts" text-anchor="start">Le négatif ne passe jamais par le relais.</text>
+<text x="430" y="180" class="ts" text-anchor="start">Contact NO = sécurité : Cerbo éteint ou flow arrêté → relais ouvert → feu ÉTEINT,</text>
+<text x="430" y="195" class="ts" text-anchor="start">le switch manuel fonctionne exactement comme avant.</text>
+<circle cx="300" cy="110" r="5" class="dot"/>
+<line x1="300" y1="110" x2="300" y2="200" class="w"/>
+<rect x="215" y="200" width="170" height="60" class="box"/><text x="300" y="225" class="t" text-anchor="middle">Disjoncteur existant</text>
+<text x="300" y="241" class="t" text-anchor="middle">DJ2 — 5 A</text>
+<line x1="300" y1="260" x2="300" y2="320" class="w"/>
+<rect x="195" y="320" width="210" height="70" class="box"/><text x="300" y="347" class="t" text-anchor="middle">SWITCH feu de mouillage</text>
+<text x="300" y="363" class="t" text-anchor="middle">existant (tableau)</text>
+<line x1="300" y1="390" x2="300" y2="520" class="w"/>
+<circle cx="300" cy="520" r="5" class="dot"/>
+<line x1="300" y1="520" x2="1020" y2="520" class="w"/>
+<text x="560" y="510" class="tb" text-anchor="middle">fil 0702 (switch → feu)</text>
+<circle cx="1060" cy="520" r="40" class="led"/><text x="1060" y="526" class="tb" text-anchor="middle">LED</text><text x="1060" y="585" class="t" text-anchor="middle">FEU DE MOUILLAGE</text>
+<text x="1060" y="600" class="t" text-anchor="middle">(tête de mât, LED)</text>
+<line x1="1100" y1="520" x2="1180" y2="520" class="w"/><line x1="1180" y1="520" x2="1180" y2="660" class="w"/><circle cx="1180" cy="660" r="5" class="dot"/>
+<circle cx="480" cy="520" r="5" class="dot"/><line x1="480" y1="520" x2="480" y2="576" class="w"/>
+<circle cx="480" cy="600" r="24" fill="#d9f2d9" stroke="#2e7d32" stroke-width="2"/>
+<line x1="480" y1="624" x2="480" y2="660" class="w"/><circle cx="480" cy="660" r="5" class="dot"/><text x="515" y="597" class="ts" text-anchor="start">voyant vert</text>
+<text x="515" y="611" class="ts" text-anchor="start">(existant)</text>
+<circle cx="1200" cy="110" r="6" class="dotb"/>
+<line x1="1200" y1="110" x2="1200" y2="170" class="wb"/>
+<rect x="1130" y="170" width="140" height="44" class="new"/><rect x="1165" y="182" width="70" height="20" fill="none" stroke="#0f6e9c" stroke-width="2"/><line x1="1165" y1="192" x2="1235" y2="192" class="wb"/>
+<text x="1285" y="186" class="tbb" text-anchor="start">NOUVEAU fusible en ligne 5 A</text>
+<text x="1285" y="202" class="tbb" text-anchor="start">≤ 18 cm du piquage (ABYC)</text>
+<line x1="1200" y1="214" x2="1200" y2="290" class="wb"/>
+<rect x="1000" y="290" width="400" height="140" class="cer"/><text x="1015" y="312" class="tb" text-anchor="start">Victron Cerbo GX</text>
+<text x="1015" y="332" class="ts" text-anchor="start">Relais 1 — contact sec</text>
+<text x="1015" y="346" class="ts" text-anchor="start">6 A max @ ≤ 30 VDC</text>
+<circle cx="1200" cy="380" r="7" class="dotb"/><text x="1200" y="405" class="tbb" text-anchor="middle">COM</text>
+<circle cx="1110" cy="380" r="7" class="dotb"/><text x="1110" y="405" class="tbb" text-anchor="middle">NO</text>
+<circle cx="1300" cy="380" r="7" fill="#999"/><text x="1300" y="405" class="ts" text-anchor="middle">NC (non utilisé)</text>
+<line x1="1200" y1="290" x2="1200" y2="373" class="wb"/>
+<line x1="1200" y1="380" x2="1135" y2="352" class="wb"/>
+<text x="1250" y="424" class="ts" text-anchor="middle">Flow Node-RED (intégré, Venus OS Large)</text>
+<line x1="1110" y1="387" x2="1110" y2="455" class="wb"/>
+
+<line x1="1110" y1="455" x2="760" y2="455" class="wb"/><line x1="760" y1="455" x2="760" y2="520" class="wb"/><circle cx="760" cy="520" r="6" class="dotb"/>
+<line x1="90" y1="700" x2="130" y2="700" class="w"/><text x="140" y="705" class="ts" text-anchor="start">noir = câblage existant, inchangé</text>
+<line x1="420" y1="700" x2="460" y2="700" class="wb"/><text x="470" y="705" class="ts" text-anchor="start">bleu = le seul ajout (2 fils + 1 fusible)</text>
+</svg>

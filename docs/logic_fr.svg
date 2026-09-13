@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="520" viewBox="0 0 1500 520" font-family="Arial, Helvetica, sans-serif">
+<style>
+ .t{font-size:14px;fill:#111}.tb{font-size:14px;font-weight:bold;fill:#111}.ts{font-size:12px;fill:#444}
+ .title{font-size:20px;font-weight:bold;fill:#1F3864}.blue{fill:#0f6e9c}.tbb{font-size:14px;font-weight:bold;fill:#0f6e9c}
+ .box{fill:#fff;stroke:#333;stroke-width:1.8}.new{fill:#eaf4fa;stroke:#0f6e9c;stroke-width:2.2}
+ .w{stroke:#333;stroke-width:2.4;fill:none}.wb{stroke:#0f6e9c;stroke-width:3;fill:none}
+ .bus{stroke:#c0392b;stroke-width:6}.busn{stroke:#333;stroke-width:6}.led{fill:#fff8c4;stroke:#c8a000;stroke-width:2}
+ .dot{fill:#333}.dotb{fill:#0f6e9c}.cer{fill:#f7f7f7;stroke:#555;stroke-width:1.5;stroke-dasharray:6 4}
+ .arr{stroke:#333;stroke-width:2.2;fill:none;marker-end:url(#a)}
+</style>
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker></defs>
+<rect x="0" y="0" width="1500" height="520" fill="#fff"/>
+<text x="750.0" y="34" class="title" text-anchor="middle">Comment le flow décide (toutes les 60 s)</text>
+<rect x="60" y="120" width="300" height="110" rx="8" class="box"/><text x="210.0" y="150" class="t" text-anchor="middle">Signal K sur le Cerbo</text>
+<text x="210.0" y="167" class="t" text-anchor="middle">http://127.0.0.1:3000</text>
+<text x="210.0" y="184" class="t" text-anchor="middle">position + vitesse fond</text>
+<line x1="360" y1="175" x2="440" y2="175" class="arr"/>
+<rect x="440" y="100" width="500" height="150" rx="8" class="new"/><text x="690.0" y="130" class="t" text-anchor="middle">DÉCISION</text>
+<text x="690.0" y="149" class="t" text-anchor="middle">nuit ?  (30 min avant le coucher → lever)</text>
+<text x="690.0" y="168" class="t" text-anchor="middle">hors port d'attache ?  (> 3 NM)</text>
+<text x="690.0" y="187" class="t" text-anchor="middle">immobile ?  (SOG < 1 nd)</text>
+<line x1="940" y1="175" x2="1020" y2="175" class="arr"/>
+<rect x="1020" y="110" width="420" height="130" rx="8" class="box"/><text x="1230.0" y="140" class="t" text-anchor="middle">Relais 1 du Cerbo</text>
+<text x="1230.0" y="158" class="t" text-anchor="middle">ON seulement si les 3 réponses sont OUI</text>
+<text x="1230.0" y="176" class="t" text-anchor="middle">(écrit au changement, ré-affirmé toutes les 5 min)</text>
+<rect x="120" y="330" width="300" height="100" rx="8" class="box"/><text x="270.0" y="360" class="t" text-anchor="middle">Port d'attache</text>
+<text x="270.0" y="377" class="t" text-anchor="middle">1 clic au ponton</text>
+<text x="270.0" y="394" class="t" text-anchor="middle">(enregistré sur disque)</text>
+<line x1="420" y1="380" x2="560" y2="380" class="w"/><line x1="560" y1="380" x2="560" y2="250" class="arr"/>
+<rect x="620" y="330" width="340" height="110" rx="8" class="box"/><text x="790.0" y="360" class="t" text-anchor="middle">Dernière position connue</text>
+<text x="790.0" y="377" class="t" text-anchor="middle">(sur disque, utilisée quand</text>
+<text x="790.0" y="394" class="t" text-anchor="middle">le GPS est coupé au mouillage)</text>
+<line x1="790" y1="330" x2="790" y2="250" class="arr"/>
+<text x="1230" y="290" class="tbb" text-anchor="middle">Aucun port déclaré → le feu reste ÉTEINT</text>
+</svg>
